@@ -1,0 +1,39 @@
+float semaforo;
+
+void setup(){
+  size(400,400);
+  background(0);
+}
+
+void draw(){
+
+  
+  if(mousePressed) {
+    
+    semaforo = random(0,3);
+    println(semaforo);
+  }
+ else if (semaforo<=1) {
+   fill(#FFFFFF);
+   rect(0,0,400,400);
+   fill(#E80000);
+   ellipseMode(CENTER);
+   ellipse(200,200,100,100);
+ }
+ 
+   else if (semaforo<=2){
+   fill(#FFFFFF);
+   rect(0,0,400,400);
+   fill(#75FF48);
+   ellipseMode(CENTER);
+   ellipse(200,100,100,100);
+   }
+   else if (semaforo<=3){
+   fill(#FFFFFF);
+   rect(0,0,400,400);
+   fill(#E7F002);
+   ellipseMode(CENTER);
+   ellipse(200,300,100,100);
+   }
+   
+}
