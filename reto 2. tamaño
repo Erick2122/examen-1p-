@@ -1,0 +1,29 @@
+int uno;
+int dos;
+
+void setup(){
+  size(500,500);
+  uno = 100;
+  dos = 100;
+}
+
+void draw(){
+  background(0);
+  fill(#7B84BC);
+  ellipse(uno,dos,100,100);
+}
+
+void keyPressed(){
+  if(keyCode == UP){
+    dos--;
+  }
+  if(keyCode == DOWN){
+    dos++;
+  }
+  if(keyCode == LEFT){
+    uno--;
+  }
+  if(keyCode == RIGHT){
+    uno++;
+  }
+}
